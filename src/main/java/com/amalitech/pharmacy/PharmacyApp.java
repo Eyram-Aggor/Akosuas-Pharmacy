@@ -49,7 +49,7 @@ public final class PharmacyApp {
             reporter.refused(e);
         }
 
-        // the sort of thing that keeps Akosua up at night: now refused, stock stays valid
+        // stock validation
         try {
             reporter.dispensed(pharmacy.dispense(kofi, amoxicillin, 100, drBoateng));
         } catch (DispenseException e) {
